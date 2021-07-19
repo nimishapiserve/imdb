@@ -24,6 +24,7 @@
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/danland": "^1.1"
+        "drupal/danland": "^1.1"
     },
     "conflict": {
         "drupal/drupal": "*"
