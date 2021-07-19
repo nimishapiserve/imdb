@@ -1,0 +1,22 @@
+uuid: 41f89c5a-13c2-4b9b-bf61-446961135c5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - danland
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: danland_messages
+theme: danland
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

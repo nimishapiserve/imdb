@@ -1,0 +1,20 @@
+uuid: 44ca5481-e5e8-4c22-9e5d-593b038e9d57
+langcode: en
+status: true
+dependencies:
+  theme:
+    - danland
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: danland_local_actions
+theme: danland
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
