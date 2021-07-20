@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.trailers.body
-    - field.field.node.trailers.field_video
+    - field.field.node.trailers.field_trailer
     - node.type.trailers
   module:
     - text
@@ -29,4 +29,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_video: true
+  field_trailer: true

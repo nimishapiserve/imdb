@@ -1,0 +1,25 @@
+uuid: 4f25c269-e487-4368-9fd8-6b645141f677
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trailer
+    - node.type.trailers
+  module:
+    - video_embed_field
+id: node.trailers.field_trailer
+field_name: field_trailer
+entity_type: node
+bundle: trailers
+label: Trailer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field
