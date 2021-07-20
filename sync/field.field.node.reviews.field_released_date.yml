@@ -1,0 +1,24 @@
+uuid: a016c2bb-ab11-4701-bb2e-c68f1685d673
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_released_date
+    - node.type.reviews
+  module:
+    - datetime
+id: node.reviews.field_released_date
+field_name: field_released_date
+entity_type: node
+bundle: reviews
+label: 'Released date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

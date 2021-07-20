@@ -1,0 +1,35 @@
+uuid: c39ea765-9deb-4087-a310-c403608d3c6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_tags
+    - node.type.reviews
+    - taxonomy.vocabulary.actors
+    - taxonomy.vocabulary.directors
+    - taxonomy.vocabulary.languages
+    - taxonomy.vocabulary.movie_genre
+id: node.reviews.field_movie_tags
+field_name: field_movie_tags
+entity_type: node
+bundle: reviews
+label: tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      actors: actors
+      movie_genre: movie_genre
+      directors: directors
+      languages: languages
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: actors
+field_type: entity_reference
