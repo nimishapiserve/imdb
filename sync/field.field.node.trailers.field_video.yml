@@ -1,0 +1,19 @@
+uuid: ed8ed38f-b785-439d-9936-70c4d2f21a5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.trailers
+id: node.trailers.field_video
+field_name: field_video
+entity_type: node
+bundle: trailers
+label: video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,37 @@
+uuid: a5ca97dc-a994-43e0-aeba-36feaf75f3b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.trailers.body
+    - field.field.node.trailers.field_video
+    - node.type.trailers
+  module:
+    - text
+    - user
+id: node.trailers.default
+targetEntityType: node
+bundle: trailers
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_video:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

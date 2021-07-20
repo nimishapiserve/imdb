@@ -1,0 +1,32 @@
+uuid: e87a419a-0df0-410b-9463-fee2e2f8486e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trailers.body
+    - field.field.node.trailers.field_video
+    - node.type.trailers
+  module:
+    - text
+    - user
+id: node.trailers.teaser
+targetEntityType: node
+bundle: trailers
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_video: true
