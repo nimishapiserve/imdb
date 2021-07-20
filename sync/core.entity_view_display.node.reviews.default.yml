@@ -1,0 +1,80 @@
+uuid: 26e32649-5912-4ed4-8fdb-b1fb080d42a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.reviews.body
+    - field.field.node.reviews.field_add_your_review
+    - field.field.node.reviews.field_movie_image
+    - field.field.node.reviews.field_movie_review
+    - field.field.node.reviews.field_movie_tags
+    - field.field.node.reviews.field_released_date
+    - image.style.medium
+    - node.type.reviews
+  module:
+    - comment
+    - datetime
+    - image
+    - text
+    - user
+id: node.reviews.default
+targetEntityType: node
+bundle: reviews
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_add_your_review:
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_movie_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_movie_review:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_movie_tags:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_released_date:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

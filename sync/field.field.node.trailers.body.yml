@@ -1,0 +1,23 @@
+uuid: 39821df6-aaf5-45d2-a2e6-c26fcd5ccd97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.trailers
+  module:
+    - text
+id: node.trailers.body
+field_name: body
+entity_type: node
+bundle: trailers
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
